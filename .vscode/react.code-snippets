@@ -1,0 +1,32 @@
+{
+  "React Base": {
+    "prefix": "rbase", // 触发代码片段的关键字
+    "body": [
+      "export const Index: React.FC = () => {",
+      "  return <div> Index </div>",
+      "}",
+      "",
+    ],
+    "description": "react 组件基础版本", // 可选的描述
+  },
+  "React ClassName": {
+    "prefix": "rclass",
+    "body": [
+      "export const Index: React.FC<IClassName> = ({ className }) => {",
+      "  return <div className={className}> Index </div>",
+      "}",
+      "",
+    ],
+    "description": "react 组件带 className",
+  },
+  "React Common": {
+    "prefix": "rcommon",
+    "body": [
+      "export const Index: React.FC<ICommonProps> = ({ className, children }) => {",
+      "  return <div className={className}> {children} </div>",
+      "}",
+      "",
+    ],
+    "description": "react 组件带 className 和 children",
+  },
+}

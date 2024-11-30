@@ -1,0 +1,41 @@
+/* 居中 */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 居中 */
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 水平居中 */
+.x-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 高度占满 */
+.flex_h_full {
+  flex-grow: 1;
+  min-height: 0;
+}
+
+/* 上下居中，左右各两边 */
+.flex-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 居中 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

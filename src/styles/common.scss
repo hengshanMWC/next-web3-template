@@ -1,0 +1,9 @@
+@import './utils';
+
+.ellipsis-1 {
+  @include ellipsis;
+}
+
+.ellipsis-2 {
+  @include ellipsis(2);
+}

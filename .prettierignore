@@ -1,0 +1,13 @@
+/dist/*
+/node_modules/**
+/.next/**
+
+**/*.svg
+**/*.sh
+
+/public/*
+
+.stylelintcache
+
+pnpm-lock.yaml
+

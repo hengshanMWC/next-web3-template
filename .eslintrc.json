@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "@antfu/eslint-config-ts",
+    "@abmao/eslint-config-ts",
+    "@unocss",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/order": 0,
+    "@stylistic/js/multiline-ternary": 0
+  }
+}

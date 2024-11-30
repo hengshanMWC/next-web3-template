@@ -1,0 +1,37 @@
+@mixin ellipsis($line: 1) {
+  display: -webkit-box; // 将对象作为弹性伸缩盒模型显示
+  overflow: hidden;
+  text-overflow: ellipsis; // 在多行文本的情况下，用...隐藏超出范围的文本
+  -webkit-line-clamp: $line; // 用来限制在一个块元素显示的文本的行数
+  word-break: break-all;
+  -webkit-box-orient: vertical; // 设置或检查伸缩盒对象的子元素的排列方式
+}
+
+@mixin bg100($url) {
+  background: url($url) no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin bgAuto($url) {
+  background: url($url) no-repeat;
+  background-size: cover;
+}
+
+@mixin triangle($border: 5px, $color: #bcc6cd) {
+  width: 0;
+  height: 0;
+  border-top: $border solid $color;
+  border-right: $border solid transparent;
+  border-left: $border solid transparent;
+  transition:
+    transform 0.3s,
+    color 0.3s;
+}
+
+@mixin arrow($size: 18px, $color: #bcc6cd, $border: 1px) {
+  display: block;
+  width: $size;
+  height: $size;
+  border-top: $border solid $color;
+  border-left: $border solid $color;
+}
