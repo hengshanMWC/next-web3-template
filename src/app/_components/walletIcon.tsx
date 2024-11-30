@@ -16,7 +16,7 @@ export function WalletIcon({
       {walletInfo?.icon ? (
         <Image
           {...otherProps}
-          src={walletInfo?.icon}
+          src={walletInfo.icon.trim()}
           alt={alt || 'wallet icon'}
           width={width}
           height={height}
