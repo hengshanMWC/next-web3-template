@@ -36,8 +36,8 @@ const persister = createAsyncStoragePersister({
 
 // Set up metadata
 const metadata = {
-  name: 'web3 utils',
-  description: 'web3 utils',
+  name: 'web3 next template',
+  description: 'web3 next template',
   url: envConfig.websiteUrl, // origin must match your domain & subdomain
   icons: ['https://avatars.githubusercontent.com/u/179229932'],
 }
